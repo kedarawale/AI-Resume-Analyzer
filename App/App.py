@@ -29,6 +29,13 @@ from PIL import Image
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
 import nltk
 nltk.download('stopwords')
+import docx2txt
+import spacy
+from spacy.matcher import Matcher
+import re
+from collections import defaultdict
+from nltk.corpus import stopwords
+nlp = spacy.load('en_core_web_sm')
 
 
 ###### Preprocessing functions ######
